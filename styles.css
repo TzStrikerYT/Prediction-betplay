@@ -1,0 +1,118 @@
+/* Estilo general */
+body {
+    h1 {
+        font-family: 'Times New Roman', 'Georgia', serif;
+    }
+    p {
+        font-family: 'Courier New', 'Monaco', monospace;
+    }
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FF0000;
+    color: #e0e0e0;
+}
+
+.container {
+    background: #470303;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+/* Formularios */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #bbbbbb;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #222;
+    color: #e0e0e0;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* Botones */
+button {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensajes de estado */
+#loading {
+    text-align: center;
+    padding: 20px;
+    display: none;
+    color: #ffcc00;
+}
+
+#error-message {
+    color: #ff4d4d;
+    padding: 10px;
+    display: none;
+    background: #2a2a2a;
+    border-radius: 5px;
+}
+
+.analisis-guardado, #resultado {
+    background: #2a2a2a;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+/* Botones específicos */
+#guardar-apuesta {
+    background-color: #28a745;
+}
+
+#guardar-apuesta:hover {
+    background-color: #218838;
+}
+
+#nuevo-analisis {
+    background-color: #6c757d;
+}
+
+#nuevo-analisis:hover {
+    background-color: #5a6268;
+}
+
+.botones {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#predicciones-guardadas {
+    display: none;
+}

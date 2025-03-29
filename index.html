@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Apuestas Deportivas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PREDICCION ANDRES &#9917;</h1>
+        
+        <div id="form-container">
+            <form id="analizarForm">
+                <div class="form-group">
+                    <label for="liga">Liga:</label>
+                    <input type="text" id="liga" required placeholder="Ejemplo: LaLiga, Premier">
+                </div>
+                
+                <div class="form-group">
+                    <label for="equipo1">Equipo Local:</label>
+                    <input type="text" id="equipo1" required placeholder="Nombre del equipo local">
+                </div>
+                
+                <div class="form-group">
+                    <label for="equipo2">Equipo Visitante:</label>
+                    <input type="text" id="equipo2" required placeholder="Nombre del equipo visitante">
+                </div>
+                
+                <button type="submit">Analizar</button>
+            </form>
+        </div>
+
+        <div id="loading">Analizando... Por favor espere...</div>
+        <div id="error-message"></div>
+        
+        <div id="resultado-container" style="display: none;">
+            <div id="resultado"></div>
+            <div class="botones">
+                <button id="guardar-apuesta">Guardar Predicción</button>
+                <button id="nuevo-analisis">Nuevo Análisis</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="predicciones-guardadas" class="container">
+        <h2>Predicciones Guardadas</h2>
+        <div id="lista-predicciones"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
