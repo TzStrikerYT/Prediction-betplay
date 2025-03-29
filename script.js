@@ -22,7 +22,7 @@ async function analizar(event) {
     resultadoContainer.style.display = 'none';
 
     try {
-        const response = await fetch('http://localhost:3000/analizar', {
+        const response = await fetch('https://67e828615052052d77880f2f--zesty-druid-3c66ec.netlify.app/analizar', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ liga, equipo1, equipo2 })
